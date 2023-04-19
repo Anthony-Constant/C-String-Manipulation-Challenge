@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>C++ String Manipulation Program</title>
+
   </head>
   <body>
     <h1>Introduction</h1>
