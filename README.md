@@ -1,24 +1,27 @@
-<!DOCTYPE html>
-<html>
-  <head>
+# C++ String Manipulation Program
 
-  </head>
-  <body>
-    <h1>Introduction</h1>
-    <p>This is a C++ String Manipulation program that encountered some challenges during development, specifically with the "ChangeToLowerCase" function. After running this function, the program would show the original string but did not provide the lowercase value next to it as it should behave.</p>
-    
-<h2>Solution</h2>
-<p>After some research, it was found that the ASCII table was built in such a way that a lowercase letter has the same value of its equivalent uppercase letter plus 32 (Vice-Versa -32). After modifying the lowercase function from -32 to +32 which is used to generate the lowercase value, the program now produces the lowercase value as it should behave.</p>
+This repository contains a C++ program for string manipulation that encountered some challenges during development. Specifically, the "ChangeToLowerCase" function did not provide the expected lowercase value next to the original string when executed.
 
-<p>However, another problem was found with the "ChangeToLowerCase" function, where the program interpreted a user input "space" to be an "@" symbol. This was due to the following line of code: "if(orinigalString[i]<=97” not being specific enough to specify the user’s input ‘space’ in terms of the ASCII table. After changing the code to as follows: “if(orinigalString[i]<=90&&originalString[i]>65)” the program was able to interpret and output the user’s input ‘space’ correctly.</p>
+## Introduction
 
-<p>From looking at the ASCII table, the program was debugged by defining the integers which should be greater or less than or equal to within the "ChangeToUpperCase" and "ChangeToLowerCase" functions.</p>
+The program is designed to manipulate strings in C++. However, the "ChangeToLowerCase" function did not behave as intended. After running the function, the program displayed the original string but failed to provide the corresponding lowercase value.
 
-<h2>Conclusion</h2>
-<p>The experience of developing this C++ String Manipulation program has highlighted the importance of thorough research and the use of other resources such as books to assist in understanding strings and how to manipulate them. This will enable further development of programming skills and knowledge to code at a reasonably high level.</p>
+## Solution
 
-<h2>Credits</h2>
-<p>This script was created by Anthony Constant (AC). If you have any questions or suggestions, you can contact him at <a href="https://anthonyconstant.co.uk/">https://anthonyconstant.co.uk/</a></p>
+After conducting research, a solution was found based on the ASCII table. It was discovered that a lowercase letter's ASCII value is equal to the ASCII value of its equivalent uppercase letter plus 32 (or vice versa, minus 32). To address the issue, the "ChangeToLowerCase" function was modified to add 32 to the ASCII value, resulting in the correct generation of the lowercase value.
 
-<h2>License</h2>
-<p>This script is released under the MIT License. See the LICENSE file for more details.</p>
+Another problem was identified with the "ChangeToLowerCase" function. The program misinterpreted a user input of "space" as an "@" symbol. This occurred due to an inadequate condition in the code, specifically the line "if(orinigalString[i]<=97". To resolve this, the code was updated to be more specific by using the following condition: "if(orinigalString[i]<=90&&originalString[i]>65)". With this modification, the program correctly interpreted and outputted the user's input of "space".
+
+The debugging process involved analyzing the ASCII table and defining the appropriate conditions within the "ChangeToUpperCase" and "ChangeToLowerCase" functions.
+
+## Conclusion
+
+Developing this C++ String Manipulation program provided valuable insights into the importance of thorough research and utilizing additional resources such as books to enhance understanding of string manipulation techniques. This experience contributes to the further development of programming skills and knowledge, enabling coding at a higher level of proficiency.
+
+## Credits
+
+The C++ String Manipulation Program was created by [Anthony Constant](https://github.com/anthonyconstant).
+
+## License
+
+This script is released under the MIT License. See the LICENSE file for more details.
