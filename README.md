@@ -20,7 +20,7 @@ Developing this C++ String Manipulation program provided valuable insights into 
 
 ## Credits
 
-The C++ String Manipulation Program was created by [Anthony Constant](https://github.com/anthonyconstant).
+The C++ String Manipulation Program was created by [Anthony Constant](https://anthonyconstant.co.uk/).
 
 ## License
 
