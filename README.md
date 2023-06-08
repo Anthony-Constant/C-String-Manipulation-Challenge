@@ -24,4 +24,4 @@ The C++ String Manipulation Program was created by [Anthony Constant](https://an
 
 ## License
 
-This script is released under the MIT License. See the LICENSE file for more details.
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
